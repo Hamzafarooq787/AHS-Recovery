@@ -1,0 +1,30 @@
+import {
+  Truck,
+  Wrench,
+  ShieldAlert,
+  BatteryCharging,
+  Car,
+  Anchor,
+  TriangleAlert,
+  Route,
+  LifeBuoy,
+  Mountain,
+  Siren,
+  PackageCheck,
+  type LucideIcon,
+} from "lucide-react"
+
+export const serviceIcons: Record<string, LucideIcon> = {
+  towing: Truck,
+  "breakdown-assistance": Wrench,
+  "rtc-recovery": ShieldAlert,
+  "jump-starts": BatteryCharging,
+  "vehicle-recovery": Car,
+  "winch-out-recovery": Anchor,
+  "accident-recovery": TriangleAlert,
+  "motorway-breakdown-recovery": Route,
+  "roadside-assistance": LifeBuoy,
+  "4x4-off-road-recovery": Mountain,
+  "specialist-accident-recovery": Siren,
+  "vehicle-transportation-delivery": PackageCheck,
+}
