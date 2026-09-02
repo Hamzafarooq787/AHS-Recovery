@@ -27,7 +27,7 @@ export default function OpengraphImage() {
             width: 120,
             height: 120,
             borderRadius: 24,
-            background: "#f5b400",
+            background: "#d9333f",
             color: "#0a0c12",
             fontSize: 48,
             fontWeight: 900,
@@ -39,7 +39,7 @@ export default function OpengraphImage() {
         <div style={{ display: "flex", color: "#ffffff", fontSize: 68, fontWeight: 900, textAlign: "center" }}>
           {siteConfig.name}
         </div>
-        <div style={{ display: "flex", color: "#f5b400", fontSize: 32, fontWeight: 700, marginTop: 16 }}>
+        <div style={{ display: "flex", color: "#d9333f", fontSize: 32, fontWeight: 700, marginTop: 16 }}>
           Vehicle Recovery &amp; Transportation
         </div>
         <div style={{ display: "flex", color: "#94a3b8", fontSize: 26, marginTop: 24, textAlign: "center" }}>

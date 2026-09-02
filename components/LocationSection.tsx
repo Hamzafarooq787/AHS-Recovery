@@ -37,7 +37,7 @@ export default function LocationSection() {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="bg-primary/20 p-8 rounded-full border border-primary/30 animate-pulse">
             <div className="bg-primary p-4 rounded-full">
-              <span className="material-symbols-outlined text-background-dark text-3xl">my_location</span>
+              <span className="material-symbols-outlined text-white text-3xl">my_location</span>
             </div>
           </div>
         </div>

@@ -40,7 +40,7 @@ export default function RecoveryFeatures() {
           <div className="text-center mt-16">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 bg-primary text-background-dark px-8 py-4 rounded-lg font-black hover:scale-[1.02] transition-transform"
+              className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-lg font-black hover:scale-[1.02] transition-transform"
             >
               View All Services <ArrowRight className="w-4 h-4" />
             </Link>
@@ -67,7 +67,7 @@ export default function RecoveryFeatures() {
           <div className="flex justify-center">
             <a
               href={`tel:${siteConfig.phoneTel}`}
-              className="bg-primary text-background-dark px-10 py-4 rounded-lg font-black text-xl hover:scale-105 transition-transform"
+              className="bg-primary text-white px-10 py-4 rounded-lg font-black text-xl hover:scale-105 transition-transform"
             >
               {siteConfig.phoneDisplay}
             </a>
@@ -105,7 +105,7 @@ export default function RecoveryFeatures() {
             <div key={index} className="flex flex-col items-center text-center space-y-4">
               <div className="w-24 h-24 rounded-full bg-background-dark border-2 border-primary flex items-center justify-center relative">
                 <span className="material-symbols-outlined text-4xl text-primary">{step.icon}</span>
-                <div className="absolute -top-2 -right-2 bg-primary text-background-dark w-8 h-8 rounded-full flex items-center justify-center font-black text-sm">
+                <div className="absolute -top-2 -right-2 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-black text-sm">
                   {step.number}
                 </div>
               </div>

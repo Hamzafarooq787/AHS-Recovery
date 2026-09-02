@@ -77,7 +77,7 @@
 @theme inline {
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono), ui-monospace, monospace;
-  --color-primary: #f5b400;
+  --color-primary: #d9333f;
   --color-background-light: #f8f7f6;
   --color-background-dark: #0a0c12;
   --color-surface-dark: #161b22;
