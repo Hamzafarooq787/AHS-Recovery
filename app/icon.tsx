@@ -25,7 +25,7 @@ export default function Icon() {
             width: 44,
             height: 44,
             borderRadius: 10,
-            background: "#f5b400",
+            background: "#d9333f",
             color: "#0a0c12",
             fontSize: 22,
             fontWeight: 900,

@@ -30,7 +30,7 @@ export default function ServiceCard({ title, description, href, image, icon: Ico
           )}
         </div>
         <div className="absolute -bottom-6 left-8 w-14 h-14 rounded-full bg-primary flex items-center justify-center shadow-md ring-4 ring-white">
-          <Icon className="w-6 h-6 text-background-dark" />
+          <Icon className="w-6 h-6 text-white" />
         </div>
       </div>
       <div className="pt-10 pb-8 px-8 space-y-3">

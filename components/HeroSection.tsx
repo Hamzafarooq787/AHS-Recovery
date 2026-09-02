@@ -47,7 +47,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 pt-6 md:pt-4">
               <a
                 href={`tel:${siteConfig.phoneTel}`}
-                className="bg-primary text-background-dark px-8 py-4 rounded-lg font-black text-lg flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform"
+                className="bg-primary text-white px-8 py-4 rounded-lg font-black text-lg flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform"
               >
                 <Phone className="w-5 h-5" />
                 Call {siteConfig.phoneDisplay}

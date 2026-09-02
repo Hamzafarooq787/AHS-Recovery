@@ -86,7 +86,7 @@ export default function Header() {
           </Link>
           <a
             href={`tel:${siteConfig.phoneTel}`}
-            className="bg-primary text-background-dark px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2 hover:brightness-110 transition-all"
+            className="bg-primary text-white px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2 hover:brightness-110 transition-all"
           >
             <Phone className="w-4 h-4" />
             {siteConfig.phoneDisplay}
@@ -162,7 +162,7 @@ export default function Header() {
               </Link>
               <a
                 href={`tel:${siteConfig.phoneTel}`}
-                className="bg-primary text-background-dark px-6 py-4 rounded-lg font-bold text-base flex items-center justify-center gap-2 hover:brightness-110 transition-all mt-4"
+                className="bg-primary text-white px-6 py-4 rounded-lg font-bold text-base flex items-center justify-center gap-2 hover:brightness-110 transition-all mt-4"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Phone className="w-5 h-5" />
