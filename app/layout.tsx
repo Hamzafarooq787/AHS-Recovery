@@ -28,7 +28,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title,
   description,
-  generator: "v0.app",
   openGraph: {
     type: "website",
     locale: "en_GB",
@@ -70,12 +69,12 @@ export default function RootLayout({
       addressRegion: "Essex",
       addressCountry: "GB",
     },
-    openingHours: "Mo-Su 00:00-23:59",
+    image: `${siteConfig.siteUrl}/opengraph-image.png`,
     sameAs: [],
   }
 
   return (
-    <html lang="en" className={`dark ${geist.variable} ${geistMono.variable}`}>
+    <html lang="en-GB" className={`dark ${geist.variable} ${geistMono.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

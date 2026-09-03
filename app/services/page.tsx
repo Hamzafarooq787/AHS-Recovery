@@ -1,22 +1,16 @@
-import type { Metadata } from "next"
 import ServicesHero from "@/components/ServicesHero"
 import ServicesGrid from "@/components/ServicesGrid"
 import ServicesIntro from "@/components/ServicesIntro"
 import ServicesCTA from "@/components/ServicesCTA"
 import { siteConfig } from "@/lib/site-config"
+import { buildMetadata } from "@/lib/seo"
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: "Vehicle Recovery & Transportation Services | AHS Recovery",
   description:
     "Towing, breakdown assistance, RTC recovery, jump starts, winch-out recovery, accident recovery, motorway recovery, 4x4 off-road recovery and nationwide vehicle transportation from AHS Recovery.",
-  alternates: {
-    canonical: `${siteConfig.siteUrl}/services`,
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-}
+  path: "/services",
+})
 
 export default function ServicesPage() {
   const breadcrumbSchema = {

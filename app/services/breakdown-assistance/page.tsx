@@ -1,20 +1,14 @@
-import type { Metadata } from "next"
 import ServicePageTemplate from "@/components/ServicePageTemplate"
 import { siteConfig, services } from "@/lib/site-config"
+import { buildMetadata } from "@/lib/seo"
 
 const service = services.find((s) => s.slug === "breakdown-assistance")!
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: service.metaTitle,
   description: service.metaDescription,
-  alternates: {
-    canonical: `${siteConfig.siteUrl}/services/${service.slug}`,
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-}
+  path: `/services/${service.slug}`,
+})
 
 const faqs = [
   {

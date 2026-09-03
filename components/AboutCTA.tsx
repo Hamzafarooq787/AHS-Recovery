@@ -14,7 +14,7 @@ export default function AboutCTA() {
           </span>
         </a>
         <p className="mt-12 text-slate-500 font-medium text-lg italic uppercase tracking-widest">
-          Available 24 Hours a Day, 7 Days a Week
+          Local Recovery &amp; Nationwide Transportation
         </p>
       </div>
     </section>
