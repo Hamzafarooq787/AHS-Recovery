@@ -10,7 +10,7 @@ import { buildMetadata } from "@/lib/seo"
 export const metadata = buildMetadata({
   title: "Vehicle Recovery Ilford, Essex | Nationwide Breakdown & Transport | AHS Recovery",
   description:
-    "AHS Recovery is based in Ilford, Essex, offering towing, breakdown assistance, accident recovery and roadside assistance locally within 60 miles, plus nationwide breakdown recovery and vehicle transportation. Call 07462 486149.",
+    "AHS Recovery is based in Ilford, Essex, offering towing, breakdown assistance, accident recovery and roadside assistance locally within 60 miles, plus nationwide breakdown recovery and vehicle transportation. Call 07576 614651.",
 })
 
 export default function HomePage() {

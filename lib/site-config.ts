@@ -34,7 +34,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Careful, professional towing for cars, vans and light commercial vehicles.",
     metaTitle: "Towing Services | AHS Recovery Ilford, Essex",
     metaDescription:
-      "AHS Recovery offers professional towing across Ilford, Essex and within approximately 60 miles. Call 07462 486149 for a tow truck near you.",
+      "AHS Recovery offers professional towing across Ilford, Essex and within approximately 60 miles. Call 07576 614651 for a tow truck near you.",
     image: "/images/van-recovery-cloudy-yard.webp",
     coverage: "local",
   },
@@ -44,7 +44,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Nationwide breakdown assistance to get you off the road and moving again safely.",
     metaTitle: "Breakdown Assistance | Nationwide | AHS Recovery",
     metaDescription:
-      "Vehicle broken down? AHS Recovery provides breakdown assistance nationwide, based in Ilford, Essex. Call 07462 486149 now.",
+      "Vehicle broken down? AHS Recovery provides breakdown assistance nationwide, based in Ilford, Essex. Call 07576 614651 now.",
     image: "/images/motorway-breakdown-recovery-van.webp",
     coverage: "nationwide",
   },
@@ -54,7 +54,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Professional road traffic collision recovery, handled with care and clear communication.",
     metaTitle: "RTC Recovery (Road Traffic Collision) | AHS Recovery",
     metaDescription:
-      "AHS Recovery provides professional road traffic collision (RTC) recovery from our Ilford, Essex base, with nationwide availability. Call 07462 486149.",
+      "AHS Recovery provides professional road traffic collision (RTC) recovery from our Ilford, Essex base, with nationwide availability. Call 07576 614651.",
     image: "/images/rtc-recovery-multiple-vehicles.webp",
     coverage: "local",
   },
@@ -64,7 +64,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "On-the-spot jump starts for both 12V and 24V vehicles and light commercial fleets.",
     metaTitle: "12V & 24V Jump Starts | AHS Recovery Ilford, Essex",
     metaDescription:
-      "Flat battery? AHS Recovery offers 12V and 24V jump starts across Ilford, Essex and within around 60 miles. Call 07462 486149.",
+      "Flat battery? AHS Recovery offers 12V and 24V jump starts across Ilford, Essex and within around 60 miles. Call 07576 614651.",
     image: "/images/roadside-assistance-petrol-station-night.webp",
     coverage: "local",
   },
@@ -74,7 +74,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "General vehicle recovery for cars, vans and light commercial vehicles that can't be driven.",
     metaTitle: "Vehicle Recovery | AHS Recovery Ilford, Essex",
     metaDescription:
-      "AHS Recovery provides vehicle recovery across Ilford, Essex and within approximately 60 miles, with nationwide options available. Call 07462 486149.",
+      "AHS Recovery provides vehicle recovery across Ilford, Essex and within approximately 60 miles, with nationwide options available. Call 07576 614651.",
     image: "/images/dropside-truck-recovery-residential.webp",
     coverage: "local",
   },
@@ -84,7 +84,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Specialist winching for vehicles stuck in mud, ditches, verges or off-road terrain.",
     metaTitle: "Winch-Out Recovery | AHS Recovery Ilford, Essex",
     metaDescription:
-      "Stuck in a ditch, field or verge? AHS Recovery provides winch-out recovery across Ilford, Essex and within around 60 miles. Call 07462 486149.",
+      "Stuck in a ditch, field or verge? AHS Recovery provides winch-out recovery across Ilford, Essex and within around 60 miles. Call 07576 614651.",
     image: "/images/off-road-plant-recovery-rural.webp",
     coverage: "local",
   },
@@ -94,7 +94,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Prompt, professional recovery of vehicles involved in road accidents.",
     metaTitle: "Accident Recovery | AHS Recovery Ilford, Essex",
     metaDescription:
-      "AHS Recovery handles accident recovery from our Ilford, Essex base, with nationwide availability for longer-distance recoveries. Call 07462 486149.",
+      "AHS Recovery handles accident recovery from our Ilford, Essex base, with nationwide availability for longer-distance recoveries. Call 07576 614651.",
     image: "/images/rtc-recovery-scrapyard.webp",
     coverage: "local",
   },
@@ -104,7 +104,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Nationwide motorway breakdown recovery, handled with attention to safety.",
     metaTitle: "Motorway Breakdown Recovery | Nationwide | AHS Recovery",
     metaDescription:
-      "Broken down on the motorway? AHS Recovery provides nationwide motorway breakdown recovery. Call 07462 486149 for assistance.",
+      "Broken down on the motorway? AHS Recovery provides nationwide motorway breakdown recovery. Call 07576 614651 for assistance.",
     image: "/images/motorway-breakdown-jaguar.webp",
     coverage: "nationwide",
   },
@@ -114,7 +114,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Roadside help for common faults, so you can often avoid a full recovery.",
     metaTitle: "Roadside Assistance | AHS Recovery Ilford, Essex",
     metaDescription:
-      "AHS Recovery offers roadside assistance across Ilford, Essex and within approximately 60 miles. Call 07462 486149 for help now.",
+      "AHS Recovery offers roadside assistance across Ilford, Essex and within approximately 60 miles. Call 07576 614651 for help now.",
     image: "/images/van-recovery-motorway-crafter.webp",
     coverage: "local",
   },
@@ -124,7 +124,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Recovery for 4x4s and vehicles stuck off-road, using suitable trailers and equipment.",
     metaTitle: "4x4 & Off-Road Recovery | AHS Recovery Ilford, Essex",
     metaDescription:
-      "AHS Recovery provides 4x4 and off-road recovery across Ilford, Essex and within around 60 miles, using our 4x4 recovery trailers. Call 07462 486149.",
+      "AHS Recovery provides 4x4 and off-road recovery across Ilford, Essex and within around 60 miles, using our 4x4 recovery trailers. Call 07576 614651.",
     image: "/images/4x4-recovery-g-wagon.webp",
     coverage: "local",
   },
@@ -134,7 +134,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Specialist recovery for more complex accident scenes and larger or awkward vehicles.",
     metaTitle: "Specialist Accident Recovery | AHS Recovery",
     metaDescription:
-      "For complex or large-vehicle accident scenes, AHS Recovery provides specialist accident recovery from Ilford, Essex, with nationwide availability. Call 07462 486149.",
+      "For complex or large-vehicle accident scenes, AHS Recovery provides specialist accident recovery from Ilford, Essex, with nationwide availability. Call 07576 614651.",
     image: "/images/specialist-accident-recovery-lamborghini.webp",
     coverage: "local",
   },
@@ -144,7 +144,7 @@ export const services: ServiceInfo[] = [
     shortDescription: "Secure nationwide transportation and delivery for cars, vans and larger vehicles.",
     metaTitle: "Nationwide Vehicle Transportation & Delivery | AHS Recovery",
     metaDescription:
-      "AHS Recovery provides nationwide vehicle transportation and delivery for cars, vans and larger vehicles. Call 07462 486149 to arrange transport.",
+      "AHS Recovery provides nationwide vehicle transportation and delivery for cars, vans and larger vehicles. Call 07576 614651 to arrange transport.",
     image: "/images/luxury-car-transport-rolls-royce.webp",
     coverage: "nationwide",
   },
