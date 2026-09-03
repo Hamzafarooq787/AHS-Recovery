@@ -11,7 +11,7 @@ export default function ServicesCTA() {
         </div>
         <a
           href={`tel:${siteConfig.phoneTel}`}
-          className="bg-primary text-white px-6 md:px-10 py-4 rounded-xl font-black text-lg md:text-xl lg:text-2xl hover:scale-105 transition-transform shadow-lg shadow-primary/20 flex items-center gap-2 md:gap-3 w-full md:w-auto justify-center whitespace-nowrap"
+          className="bg-primary text-background-dark px-6 md:px-10 py-4 rounded-xl font-black text-lg md:text-xl lg:text-2xl hover:scale-105 transition-transform shadow-lg shadow-primary/20 flex items-center gap-2 md:gap-3 w-full md:w-auto justify-center whitespace-nowrap"
         >
           <Phone className="w-5 h-5 md:w-6 md:h-6" />
           <span className="block">Call {siteConfig.phoneDisplay}</span>

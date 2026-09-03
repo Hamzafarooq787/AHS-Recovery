@@ -19,7 +19,7 @@ export default function AboutHero() {
           </p>
           <div className="pt-4">
             <a
-              className="inline-flex items-center justify-center gap-3 bg-primary text-white px-10 py-5 rounded-lg font-black text-xl hover:scale-[1.02] transition-transform w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-3 bg-primary text-background-dark px-10 py-5 rounded-lg font-black text-xl hover:scale-[1.02] transition-transform w-full sm:w-auto"
               href={`tel:${siteConfig.phoneTel}`}
             >
               <Phone className="w-6 h-6" />

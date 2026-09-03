@@ -58,7 +58,7 @@ export default function ServicePageTemplate({
             <p className="text-slate-400 text-lg max-w-lg leading-relaxed">{intro}</p>
             <div className="pt-4">
               <a
-                className="inline-flex items-center justify-center gap-3 bg-primary text-white px-8 py-5 rounded-lg font-black text-xl hover:scale-[1.02] transition-transform w-full sm:w-auto"
+                className="inline-flex items-center justify-center gap-3 bg-primary text-background-dark px-8 py-5 rounded-lg font-black text-xl hover:scale-[1.02] transition-transform w-full sm:w-auto"
                 href={`tel:${siteConfig.phoneTel}`}
               >
                 <Phone className="w-5 h-5" />
@@ -159,7 +159,7 @@ export default function ServicePageTemplate({
               <div key={step.number} className="flex flex-col items-center text-center space-y-4">
                 <div className="w-24 h-24 rounded-full bg-background-dark border border-primary flex items-center justify-center relative">
                   <span className="material-symbols-outlined text-4xl text-primary">{step.icon}</span>
-                  <div className="absolute -top-1 -right-1 bg-primary text-white w-7 h-7 rounded-full flex items-center justify-center font-black text-xs">
+                  <div className="absolute -top-1 -right-1 bg-primary text-background-dark w-7 h-7 rounded-full flex items-center justify-center font-black text-xs">
                     {step.number}
                   </div>
                 </div>
@@ -247,7 +247,7 @@ export default function ServicePageTemplate({
               className="relative w-full md:w-1/2 h-80 md:h-[450px] overflow-hidden bg-background-dark/40"
               style={{
                 backgroundImage:
-                  "radial-gradient(circle at 30% 30%, rgba(217,51,63,0.14), transparent 45%), radial-gradient(circle at 75% 70%, rgba(217,51,63,0.09), transparent 50%)",
+                  "radial-gradient(circle at 30% 30%, rgba(219,165,3,0.14), transparent 45%), radial-gradient(circle at 75% 70%, rgba(219,165,3,0.09), transparent 50%)",
               }}
             />
           </div>
