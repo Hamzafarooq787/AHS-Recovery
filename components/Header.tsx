@@ -37,74 +37,76 @@ export default function Header() {
   }, [mobileMenuOpen])
 
   return (
-    <header
-      className={`sticky top-0 z-50 w-full px-6 md:px-20 lg:px-40 py-3 md:py-4 h-[64px] md:h-[72px] transition-colors duration-300 ${
-        scrolled || mobileMenuOpen
-          ? "border-b border-white/10 bg-background-dark/95 backdrop-blur-sm"
-          : "border-b border-transparent bg-transparent"
-      }`}
-    >
-      <div className="flex items-center justify-between max-w-[1280px] mx-auto h-full">
-        <Logo />
-        <nav className="hidden md:flex items-center gap-8">
-          <Link className="text-sm font-medium hover:text-primary transition-colors" href="/">
-            Home
-          </Link>
-          <div
-            className="relative group"
-            onMouseEnter={() => setServicesDropdownOpen(true)}
-            onMouseLeave={() => setServicesDropdownOpen(false)}
-          >
-            <Link
-              className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1 py-2"
-              href="/services"
-            >
-              Services
-              <span className="material-symbols-outlined text-sm">expand_more</span>
+    <>
+      <header
+        className={`sticky top-0 z-50 w-full px-6 md:px-20 lg:px-40 py-3 md:py-4 h-[64px] md:h-[72px] transition-colors duration-300 ${
+          scrolled || mobileMenuOpen
+            ? "border-b border-white/10 bg-background-dark/95 backdrop-blur-sm"
+            : "border-b border-transparent bg-transparent"
+        }`}
+      >
+        <div className="flex items-center justify-between max-w-[1280px] mx-auto h-full">
+          <Logo />
+          <nav className="hidden md:flex items-center gap-8">
+            <Link className="text-sm font-medium hover:text-primary transition-colors" href="/">
+              Home
             </Link>
-            {servicesDropdownOpen && (
-              <div className="absolute top-full left-0 pt-2 w-64 z-50">
-                <div className="bg-background-dark border border-white/10 rounded-lg shadow-xl py-2">
-                  {services.map((service) => (
-                    <Link
-                      key={service.slug}
-                      href={`/services/${service.slug}`}
-                      className="flex items-center gap-3 px-4 py-3 text-sm hover:bg-white/5 hover:text-primary transition-colors"
-                    >
-                      <span>{service.title}</span>
-                    </Link>
-                  ))}
+            <div
+              className="relative group"
+              onMouseEnter={() => setServicesDropdownOpen(true)}
+              onMouseLeave={() => setServicesDropdownOpen(false)}
+            >
+              <Link
+                className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1 py-2"
+                href="/services"
+              >
+                Services
+                <span className="material-symbols-outlined text-sm">expand_more</span>
+              </Link>
+              {servicesDropdownOpen && (
+                <div className="absolute top-full left-0 pt-2 w-64 z-50">
+                  <div className="bg-background-dark border border-white/10 rounded-lg shadow-xl py-2">
+                    {services.map((service) => (
+                      <Link
+                        key={service.slug}
+                        href={`/services/${service.slug}`}
+                        className="flex items-center gap-3 px-4 py-3 text-sm hover:bg-white/5 hover:text-primary transition-colors"
+                      >
+                        <span>{service.title}</span>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
-          <Link className="text-sm font-medium hover:text-primary transition-colors" href="/gallery">
-            Gallery
-          </Link>
-          <Link className="text-sm font-medium hover:text-primary transition-colors" href="/about">
-            About Us
-          </Link>
-          <Link className="text-sm font-medium hover:text-primary transition-colors" href="/contact">
-            Contact Us
-          </Link>
-          <a
-            href={`tel:${siteConfig.phoneTel}`}
-            className="bg-primary text-background-dark px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2 hover:brightness-110 transition-all"
+              )}
+            </div>
+            <Link className="text-sm font-medium hover:text-primary transition-colors" href="/gallery">
+              Gallery
+            </Link>
+            <Link className="text-sm font-medium hover:text-primary transition-colors" href="/about">
+              About Us
+            </Link>
+            <Link className="text-sm font-medium hover:text-primary transition-colors" href="/contact">
+              Contact Us
+            </Link>
+            <a
+              href={`tel:${siteConfig.phoneTel}`}
+              className="bg-primary text-background-dark px-6 py-2.5 rounded-lg font-bold text-sm flex items-center gap-2 hover:brightness-110 transition-all"
+            >
+              <Phone className="w-4 h-4" />
+              {siteConfig.phoneDisplay}
+            </a>
+          </nav>
+          <button
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label="Toggle mobile menu"
           >
-            <Phone className="w-4 h-4" />
-            {siteConfig.phoneDisplay}
-          </a>
-        </nav>
-        <button
-          className="md:hidden"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-expanded={mobileMenuOpen}
-          aria-controls="mobile-menu"
-          aria-label="Toggle mobile menu"
-        >
-          {mobileMenuOpen ? <X className="w-7 h-7 text-white" /> : <Menu className="w-7 h-7 text-white" />}
-        </button>
-      </div>
+            {mobileMenuOpen ? <X className="w-7 h-7 text-white" /> : <Menu className="w-7 h-7 text-white" />}
+          </button>
+        </div>
+      </header>
 
       {mobileMenuOpen && (
         <>
@@ -182,6 +184,6 @@ export default function Header() {
           </nav>
         </>
       )}
-    </header>
+    </>
   )
 }
