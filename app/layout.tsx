@@ -69,11 +69,12 @@ export default function RootLayout({
       addressRegion: "Essex",
       addressCountry: "GB",
     },
+    image: `${siteConfig.siteUrl}/opengraph-image.png`,
     sameAs: [],
   }
 
   return (
-    <html lang="en" className={`dark ${geist.variable} ${geistMono.variable}`}>
+    <html lang="en-GB" className={`dark ${geist.variable} ${geistMono.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

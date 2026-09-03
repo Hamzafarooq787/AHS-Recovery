@@ -1,21 +1,15 @@
-import type { Metadata } from "next"
 import { Phone } from "lucide-react"
 import GalleryGrid from "@/components/GalleryGrid"
 import { siteConfig } from "@/lib/site-config"
 import { galleryImages } from "@/lib/gallery"
+import { buildMetadata } from "@/lib/seo"
 
-export const metadata: Metadata = {
+export const metadata = buildMetadata({
   title: "Recovery Photo Gallery | AHS Recovery",
   description:
     "Real recovery and transportation photos from AHS Recovery jobs — towing, breakdown recovery, accident recovery, 4x4 recovery and vehicle transportation, based in Ilford, Essex.",
-  alternates: {
-    canonical: `${siteConfig.siteUrl}/gallery`,
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-}
+  path: "/gallery",
+})
 
 export default function GalleryPage() {
   const breadcrumbSchema = {
