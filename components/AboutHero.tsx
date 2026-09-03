@@ -30,8 +30,8 @@ export default function AboutHero() {
       </div>
       <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-0 relative bg-navy-accent overflow-hidden">
         <Image
-          src="/images/flatbed-recovery-handover.webp"
-          alt="AHS Recovery technician handing over a recovered vehicle to a customer"
+          src="/images/highway-maintenance-truck-recovery.webp"
+          alt="AHS Recovery flatbed truck loaded with a highway maintenance vehicle"
           fill
           priority
           className="object-cover"
