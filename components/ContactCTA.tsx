@@ -15,6 +15,14 @@ export default function ContactCTA() {
             {siteConfig.phoneDisplay}
           </span>
         </a>
+        <p className="mt-4">
+          <a
+            className="text-slate-400 hover:text-primary transition-colors text-lg md:text-2xl font-bold tabular-nums"
+            href={`tel:${siteConfig.phoneAltTel}`}
+          >
+            Alt: {siteConfig.phoneAltDisplay}
+          </a>
+        </p>
         <p className="mt-12 text-slate-500 font-medium text-lg italic">
           Our team is ready to help with local and nationwide recovery.
         </p>
