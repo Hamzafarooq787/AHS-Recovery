@@ -13,7 +13,7 @@ export default function CTASection() {
         {siteConfig.phoneDisplay}
       </a>
       <p className="mt-6 md:mt-8 text-background-dark/80 font-bold text-sm md:text-lg uppercase tracking-wide md:tracking-widest px-4">
-        24 Hours a Day • 7 Days a Week
+        Ilford, Essex &middot; Local &amp; Nationwide
       </p>
     </section>
   )

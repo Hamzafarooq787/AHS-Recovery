@@ -16,7 +16,7 @@ export default function ContactCTA() {
           </span>
         </a>
         <p className="mt-12 text-slate-500 font-medium text-lg italic">
-          Our dispatchers are standing by 24 hours a day.
+          Our team is ready to help with local and nationwide recovery.
         </p>
         <a
           href={`mailto:${siteConfig.email}`}

@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Structure
 
-- `app/` — Next.js App Router pages (home, services, about, contact, areas)
+- `app/` — Next.js App Router pages (home, services, about, contact, gallery)
 - `components/` — Reusable UI and page-section components
 - `lib/site-config.ts` — Central business details, service list and coverage areas
 
