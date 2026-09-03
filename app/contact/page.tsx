@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo"
 export const metadata = buildMetadata({
   title: "Contact AHS Recovery | Ilford, Essex Vehicle Recovery",
   description:
-    "Contact AHS Recovery in Ilford, Essex for towing, breakdown assistance and vehicle recovery. Call 07883 546955 or email AHSRECOVERY@OUTLOOK.COM.",
+    "Contact AHS Recovery in Ilford, Essex for towing, breakdown assistance and vehicle recovery. Call 07576 614651 or email AHSRECOVERY@OUTLOOK.COM.",
   path: "/contact",
 })
 
