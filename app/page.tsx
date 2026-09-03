@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import HeroSection from "@/components/HeroSection"
 import ServicesOverview from "@/components/ServicesOverview"
 import RecoveryFeatures from "@/components/RecoveryFeatures"
+import PhotoMarquee from "@/components/PhotoMarquee"
 import LocationSection from "@/components/LocationSection"
 import FAQSection from "@/components/FAQSection"
 import CTASection from "@/components/CTASection"
@@ -26,6 +27,7 @@ export default function HomePage() {
       <HeroSection />
       <ServicesOverview />
       <RecoveryFeatures />
+      <PhotoMarquee />
       <LocationSection />
       <FAQSection />
       <CTASection />
