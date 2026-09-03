@@ -4,8 +4,8 @@ export default function ServicesHero() {
   return (
     <section className="relative w-full py-24 flex items-center justify-center overflow-hidden border-b border-white/5 bg-navy-accent">
       <Image
-        src="/images/breakdown-recovery-night.webp"
-        alt="AHS Recovery breakdown recovery vehicle at night"
+        src="/images/recovery-truck-fleet-transport.webp"
+        alt="AHS Recovery heavy recovery truck being transported on a larger flatbed"
         fill
         priority
         className="object-cover opacity-40"

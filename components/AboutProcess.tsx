@@ -7,8 +7,8 @@ export default function AboutProcess() {
       <section className="flex flex-col lg:flex-row w-full overflow-hidden bg-background-dark">
         <div className="w-full lg:w-1/2 min-h-[350px] relative bg-navy-accent overflow-hidden">
           <Image
-            src="/images/Roadside Assistance (1).webp"
-            alt="AHS Recovery roadside assistance technician at work"
+            src="/images/large-vehicle-recovery-hookloader.webp"
+            alt="AHS Recovery flatbed truck loaded with a large commercial vehicle"
             fill
             loading="lazy"
             className="object-cover"

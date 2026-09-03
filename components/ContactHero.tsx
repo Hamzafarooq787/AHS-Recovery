@@ -4,8 +4,8 @@ export default function ContactHero() {
   return (
     <section className="relative w-full min-h-[45vh] flex items-center overflow-hidden bg-navy-accent">
       <Image
-        src="/images/roadside-fuel-closeup.webp"
-        alt="AHS Recovery roadside assistance close-up"
+        src="/images/motorhome-transport-sunset.webp"
+        alt="AHS Recovery flatbed truck transporting a motorhome at sunset"
         fill
         priority
         className="object-cover opacity-30"

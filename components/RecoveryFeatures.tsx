@@ -50,8 +50,8 @@ export default function RecoveryFeatures() {
 
       <section className="w-full py-24 relative overflow-hidden flex items-center justify-center text-center px-6 bg-navy-accent">
         <Image
-          src="/images/Recovery to Dealership.webp"
-          alt="AHS Recovery vehicle transportation and delivery"
+          src="/images/plant-machinery-transport-excavators.webp"
+          alt="AHS Recovery flatbed lorry transporting excavators"
           fill
           loading="lazy"
           className="object-cover opacity-25"

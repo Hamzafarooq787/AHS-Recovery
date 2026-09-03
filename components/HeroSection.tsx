@@ -13,8 +13,8 @@ export default function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden border-b border-white/5 min-h-[80vh] flex items-center">
       <Image
-        src="/images/breakdown-recovery-night.webp"
-        alt="AHS Recovery breakdown recovery tow truck at night"
+        src="/images/breakdown-recovery-motorway-sunset.webp"
+        alt="AHS Recovery flatbed truck recovering a breakdown on the motorway at sunset"
         fill
         priority
         className="object-cover"
