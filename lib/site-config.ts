@@ -8,6 +8,7 @@ export const siteConfig = {
   phoneAltIntlDisplay: "+44 7576 614651",
   phoneAltTel: "+447576614651",
   whatsapp: "https://wa.me/447883546955",
+  whatsappAlt: "https://wa.me/447576614651",
   email: "AHSRECOVERY@OUTLOOK.COM",
   location: "Ilford, Essex",
   localCoverageArea: "Ilford, Essex and surrounding areas within approximately 60 miles",
