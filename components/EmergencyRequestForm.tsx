@@ -64,7 +64,7 @@ export default function EmergencyRequestForm() {
 
   return (
     <div className="w-full bg-white rounded-3xl shadow-2xl ring-1 ring-black/5 overflow-hidden">
-      <div className="h-1.5 bg-gradient-to-r from-primary via-rose-400 to-primary" />
+      <div className="h-1.5 bg-gradient-to-r from-primary via-amber-400 to-primary" />
       <div className="p-6 md:p-8">
         <div className="flex items-start gap-4 mb-6">
           <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -205,7 +205,7 @@ export default function EmergencyRequestForm() {
 
           <button
             type="submit"
-            className="w-full bg-primary text-white font-black text-base py-4 rounded-xl shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:scale-[1.02] active:scale-[0.99] transition-all flex items-center justify-center gap-2"
+            className="w-full bg-primary text-background-dark font-black text-base py-4 rounded-xl shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:scale-[1.02] active:scale-[0.99] transition-all flex items-center justify-center gap-2"
           >
             <Siren className="w-5 h-5" />
             Request Vehicle Recovery
