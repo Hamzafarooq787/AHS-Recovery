@@ -28,6 +28,19 @@ export default function Footer() {
           </ul>
         </div>
         <div className="space-y-4">
+          <h4 className="text-white font-bold uppercase tracking-wider text-sm">Company</h4>
+          <ul className="space-y-2 text-slate-500 text-sm mb-6">
+            <li>
+              <Link className="hover:text-primary" href="/gallery">
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link className="hover:text-primary" href="/about">
+                About Us
+              </Link>
+            </li>
+          </ul>
           <h4 className="text-white font-bold uppercase tracking-wider text-sm">Contact</h4>
           <ul className="space-y-2 text-slate-500 text-sm">
             <li className="flex items-center gap-2">
