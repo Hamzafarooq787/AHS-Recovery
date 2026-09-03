@@ -78,6 +78,9 @@ export default function Header() {
               </div>
             )}
           </div>
+          <Link className="text-sm font-medium hover:text-primary transition-colors" href="/gallery">
+            Gallery
+          </Link>
           <Link className="text-sm font-medium hover:text-primary transition-colors" href="/about">
             About Us
           </Link>
@@ -146,6 +149,13 @@ export default function Header() {
                   </div>
                 )}
               </div>
+              <Link
+                href="/gallery"
+                className="text-base font-medium text-white hover:text-primary transition-colors py-3 border-b border-white/10"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Gallery
+              </Link>
               <Link
                 href="/about"
                 className="text-base font-medium text-white hover:text-primary transition-colors py-3 border-b border-white/10"
