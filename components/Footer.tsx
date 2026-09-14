@@ -63,9 +63,16 @@ export default function Footer() {
                 {siteConfig.emailSecondary}
               </a>
             </li>
-            <li className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-              {siteConfig.location}, {siteConfig.country}
+            <li className="flex items-start gap-2">
+              <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+              <a
+                href={siteConfig.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary"
+              >
+                {siteConfig.fullAddress}
+              </a>
             </li>
           </ul>
         </div>

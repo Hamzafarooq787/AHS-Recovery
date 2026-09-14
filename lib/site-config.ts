@@ -14,6 +14,12 @@ export const siteConfig = {
   location: "Ilford, Essex",
   localCoverageArea: "Ilford, Essex and surrounding areas within approximately 60 miles",
   country: "United Kingdom",
+  addressStreet: "203 Tiptree Cres",
+  addressLocality: "Ilford",
+  addressRegion: "Essex",
+  addressPostcode: "IG5 0ST",
+  addressCountryCode: "GB",
+  fullAddress: "203 Tiptree Cres, Ilford IG5 0ST, United Kingdom",
   fleetNote: "a fleet ranging from 4x4 recovery trailers to 18-tonne recovery lorries",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://ahsrecovery.co.uk",
   googleMapsEmbedUrl:
