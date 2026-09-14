@@ -8,9 +8,17 @@ interface ServiceCardProps {
   href: string
   image?: string
   icon: LucideIcon
+  linkText?: string
 }
 
-export default function ServiceCard({ title, description, href, image, icon: Icon }: ServiceCardProps) {
+export default function ServiceCard({
+  title,
+  description,
+  href,
+  image,
+  icon: Icon,
+  linkText = "Learn More",
+}: ServiceCardProps) {
   return (
     <Link
       href={href}
@@ -37,7 +45,7 @@ export default function ServiceCard({ title, description, href, image, icon: Ico
         <h3 className="text-lg font-bold text-slate-900">{title}</h3>
         <p className="text-slate-500 text-sm leading-relaxed">{description}</p>
         <span className="inline-flex items-center gap-2 text-primary text-sm font-bold group-hover:gap-3 transition-all pt-1">
-          Learn More <ArrowRight className="w-4 h-4" />
+          {linkText} <ArrowRight className="w-4 h-4" />
         </span>
       </div>
     </Link>

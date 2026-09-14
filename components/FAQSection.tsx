@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
-import { siteConfig } from "@/lib/site-config"
 
 interface FAQ {
   question: string
@@ -11,52 +10,43 @@ interface FAQ {
 
 const faqs: FAQ[] = [
   {
-    question: "Where is AHS Recovery based?",
-    answer: `AHS Recovery is based in ${siteConfig.location}, and handles local recovery work across ${siteConfig.localCoverageArea}.`,
-  },
-  {
-    question: "Do you only cover Ilford and Essex?",
+    question: "Which areas do you cover from Ilford?",
     answer:
-      "Our local recovery services cover Ilford, Essex and surrounding areas within around 60 miles. Breakdown recovery and vehicle transportation are both available nationwide.",
+      "Our local recovery service generally covers locations within approximately 60 miles of Ilford. This includes nearby areas across Redbridge, East London and parts of Essex.",
   },
   {
-    question: "What types of vehicles can you recover?",
+    question: "What vehicles can AHS Recovery transport?",
     answer:
-      "We recover cars, vans, 4x4s and larger vehicles. Our fleet ranges from 4x4 recovery trailers to 18-tonne recovery lorries, so we can match the right vehicle to the job.",
+      "We can recover and transport many cars, vans, 4x4s, non-running vehicles and certain larger vehicles. Provide the vehicle's make, model, size and condition when requesting assistance.",
   },
   {
-    question: "Can you help if my vehicle won't start?",
+    question: "Can you recover a car that will not start?",
     answer:
-      "Yes. Alongside full recovery and towing, we offer jump starts for both 12V and 24V vehicles, so you can often get back on the road without a full tow.",
+      "Yes. If your car will not start, we can assess whether it requires roadside assistance, a battery jump start or complete vehicle recovery.",
   },
   {
-    question: "Do you recover vehicles after an accident?",
+    question: "Can you take my vehicle to a garage?",
+    answer: "Yes. We can transport your vehicle to an agreed garage, home, storage facility or another suitable destination.",
+  },
+  {
+    question: "Do you provide nationwide vehicle recovery?",
     answer:
-      "Yes, we provide RTC (road traffic collision) recovery and accident recovery, including specialist accident recovery for larger or more complex situations.",
+      "Nationwide assistance is available specifically for breakdown recovery and vehicle transportation. Most other recovery services cover Ilford and locations within approximately 60 miles.",
   },
   {
-    question: "Do you deliver or transport vehicles that don't run?",
+    question: "Do you recover accident-damaged vehicles?",
     answer:
-      "Yes. Our nationwide vehicle transportation and delivery service can move non-runner vehicles as well as those that are driveable.",
+      "Yes. We provide accident recovery, RTC recovery and specialist accident recovery. The vehicle can be moved once the scene is safe and the relevant authorities have permitted its removal.",
   },
   {
-    question: "How do I book a recovery?",
-    answer: `Call us on ${siteConfig.phoneDisplay} or email ${siteConfig.email} with your location and vehicle details, and we'll take it from there.`,
-  },
-  {
-    question: "Do I need to be with my vehicle when you arrive?",
+    question: "Can you recover vehicles from the A12 and A406?",
     answer:
-      "Ideally yes, so our driver can confirm details and discuss where you'd like the vehicle taken. If that's not possible, let us know when you contact us and we'll agree the best arrangement for your situation.",
+      "We can assist on major routes around Ilford, including the A12, A406, M11 and sections of the M25. Attendance depends on safe access, traffic conditions and availability.",
   },
   {
-    question: "How long will you take to arrive?",
+    question: "What information do you need when I call?",
     answer:
-      "Arrival times depend on your location, the time of day and current job load, so we can't give a fixed time upfront. Call us with your postcode and we'll give you the most accurate estimate for your situation, and keep you updated if anything changes.",
-  },
-  {
-    question: "Can my family travel in the cab with you?",
-    answer:
-      "Yes — some of our recovery vehicles are 7-seater trucks, so in many cases your family can travel alongside the driver rather than arranging separate transport or waiting behind for a lift. Availability depends on the vehicle assigned to your job, so please let us know how many passengers will be travelling when you book, and we'll confirm what's possible.",
+      "Provide your exact location, vehicle type, its current condition, the nature of the problem and the destination. Photos can also help us assess damaged or difficult-to-access vehicles.",
   },
 ]
 
@@ -84,17 +74,10 @@ export default function FAQSection() {
       />
       <div className="px-6 md:px-20 lg:px-40 max-w-[1400px] mx-auto">
         <div className="text-center mb-16">
-          <span className="text-primary font-black uppercase tracking-[0.2em] text-sm">FAQs</span>
+          <span className="text-primary font-black uppercase tracking-[0.2em] text-sm">Common Questions</span>
           <h2 className="text-3xl md:text-5xl font-black text-slate-900 mt-4 mb-4">
-            Frequently Asked Questions
+            Frequently Asked Questions About Vehicle Recovery in Ilford
           </h2>
-          <p className="text-slate-500 text-base md:text-lg max-w-2xl mx-auto">
-            Everything you need to know about our recovery service. Can&apos;t find your answer? Call{" "}
-            <a href={`tel:${siteConfig.phoneTel}`} className="text-primary font-bold hover:underline">
-              {siteConfig.phoneDisplay}
-            </a>{" "}
-            and we&apos;ll help right away.
-          </p>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-3">
