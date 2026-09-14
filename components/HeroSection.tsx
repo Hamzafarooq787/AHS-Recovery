@@ -43,14 +43,14 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a
                 href={`tel:${siteConfig.phoneTel}`}
-                className="bg-primary text-background-dark px-8 py-4 rounded-lg font-black text-lg flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform"
+                className="flex-1 whitespace-nowrap bg-primary text-background-dark px-6 py-4 rounded-lg font-black text-base flex items-center justify-center gap-2.5 hover:scale-[1.02] transition-transform"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-5 h-5 flex-shrink-0" />
                 Call {siteConfig.phoneDisplay}
               </a>
               <a
                 href="/services"
-                className="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-4 rounded-lg font-bold text-lg transition-colors text-center"
+                className="flex-1 whitespace-nowrap bg-white/5 hover:bg-white/10 text-white border border-white/10 px-6 py-4 rounded-lg font-bold text-base transition-colors text-center flex items-center justify-center"
               >
                 View Recovery Services
               </a>
