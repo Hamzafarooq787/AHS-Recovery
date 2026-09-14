@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Mail, Phone, MapPin } from "lucide-react"
 import Logo from "./Logo"
+import PaymentMethods from "./PaymentMethods"
 import { services, siteConfig } from "@/lib/site-config"
 
 export default function Footer() {
@@ -14,6 +15,7 @@ export default function Footer() {
             recovery across {siteConfig.localCoverageArea}, plus nationwide breakdown recovery and vehicle
             transportation. Our fleet ranges from 4x4 recovery trailers to 18-tonne recovery lorries.
           </p>
+          <PaymentMethods />
         </div>
         <div className="space-y-4">
           <h4 className="text-white font-bold uppercase tracking-wider text-sm">Services</h4>
@@ -53,6 +55,12 @@ export default function Footer() {
               <Mail className="w-4 h-4 text-primary flex-shrink-0" />
               <a href={`mailto:${siteConfig.email}`} className="hover:text-primary break-all">
                 {siteConfig.email}
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+              <a href={`mailto:${siteConfig.emailSecondary}`} className="hover:text-primary break-all">
+                {siteConfig.emailSecondary}
               </a>
             </li>
             <li className="flex items-center gap-2">

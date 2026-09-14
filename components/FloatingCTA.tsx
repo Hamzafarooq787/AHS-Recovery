@@ -99,7 +99,7 @@ export default function FloatingCTA() {
       {openMenu === "call" && (
         <OptionsCard
           title="Call AHS Recovery"
-          accentClass="bg-primary/15 text-primary"
+          accentClass="bg-[#ff1a1a]/15 text-[#ff1a1a]"
           icon={<Phone className="w-4 h-4" />}
           options={callOptions}
         />
@@ -113,17 +113,25 @@ export default function FloatingCTA() {
         />
       )}
 
-      <button
-        type="button"
-        onClick={() => toggle("call")}
-        className={`flex items-center justify-center w-12 h-12 md:w-[60px] md:h-[60px] rounded-full text-background-dark shadow-lg hover:shadow-xl transition-all ${
-          openMenu === "call" ? "bg-white ring-2 ring-primary" : "bg-primary hover:brightness-110"
-        }`}
-        aria-label="Call AHS Recovery"
-        aria-expanded={openMenu === "call"}
-      >
-        <Phone className="w-5 h-5 md:w-6 md:h-6" />
-      </button>
+      <div className="relative">
+        {openMenu !== "call" && (
+          <>
+            <span className="absolute inset-0 rounded-full bg-[#ff1a1a] animate-ping opacity-75 pointer-events-none" />
+            <span className="absolute inset-0 rounded-full bg-[#ff1a1a] animate-pulse opacity-40 pointer-events-none" />
+          </>
+        )}
+        <button
+          type="button"
+          onClick={() => toggle("call")}
+          className={`relative flex items-center justify-center w-12 h-12 md:w-[60px] md:h-[60px] rounded-full text-white shadow-lg shadow-[#ff1a1a]/50 hover:shadow-xl transition-all ${
+            openMenu === "call" ? "bg-white text-[#ff1a1a] ring-2 ring-[#ff1a1a]" : "bg-[#ff1a1a] hover:brightness-110"
+          }`}
+          aria-label="Call AHS Recovery"
+          aria-expanded={openMenu === "call"}
+        >
+          <Phone className="w-5 h-5 md:w-6 md:h-6" />
+        </button>
+      </div>
       <button
         type="button"
         onClick={() => toggle("whatsapp")}

@@ -48,6 +48,16 @@ const faqs: FAQ[] = [
     answer:
       "Ideally yes, so our driver can confirm details and discuss where you'd like the vehicle taken. If that's not possible, let us know when you contact us and we'll agree the best arrangement for your situation.",
   },
+  {
+    question: "How long will you take to arrive?",
+    answer:
+      "Arrival times depend on your location, the time of day and current job load, so we can't give a fixed time upfront. Call us with your postcode and we'll give you the most accurate estimate for your situation, and keep you updated if anything changes.",
+  },
+  {
+    question: "Can my family travel in the cab with you?",
+    answer:
+      "Yes — some of our recovery vehicles are 7-seater trucks, so in many cases your family can travel alongside the driver rather than arranging separate transport or waiting behind for a lift. Availability depends on the vehicle assigned to your job, so please let us know how many passengers will be travelling when you book, and we'll confirm what's possible.",
+  },
 ]
 
 export default function FAQSection() {
