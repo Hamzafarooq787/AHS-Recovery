@@ -31,7 +31,11 @@ export default function TestimonialsSection() {
     <section className="bg-white py-24">
       <div className="px-6 md:px-20 lg:px-40 max-w-[1400px] mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-slate-900">What Our Customers Say</h2>
+          <span className="text-primary font-black uppercase tracking-[0.2em] text-sm">Reviews</span>
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mt-4 mb-4">What Our Customers Say</h2>
+          <p className="text-slate-500 text-base md:text-lg max-w-2xl mx-auto">
+            Real feedback from people we&apos;ve helped on the roadside and beyond.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
