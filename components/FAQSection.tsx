@@ -56,7 +56,7 @@ const faqs: FAQ[] = [
   {
     question: "Can my family travel in the cab with you?",
     answer:
-      "In most cases, yes — space allowing, a passenger can usually travel in the cab alongside the driver. This depends on the vehicle being used and the specific job, so please mention it when you book and we'll confirm what's possible.",
+      "Yes — some of our recovery vehicles are 7-seater trucks, so in many cases your family can travel alongside the driver rather than arranging separate transport or waiting behind for a lift. Availability depends on the vehicle assigned to your job, so please let us know how many passengers will be travelling when you book, and we'll confirm what's possible.",
   },
 ]
 
