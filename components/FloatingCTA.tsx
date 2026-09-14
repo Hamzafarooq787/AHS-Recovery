@@ -4,6 +4,7 @@ import type { ReactNode } from "react"
 import { useEffect, useRef, useState } from "react"
 import { Phone, Mail, ChevronRight } from "lucide-react"
 import { siteConfig } from "@/lib/site-config"
+import { useCookieConsent } from "@/lib/cookie-consent"
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -61,6 +62,7 @@ function OptionsCard({
 export default function FloatingCTA() {
   const [openMenu, setOpenMenu] = useState<"call" | "whatsapp" | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+  const { isBannerOpen } = useCookieConsent()
 
   useEffect(() => {
     if (!openMenu) return
@@ -95,7 +97,12 @@ export default function FloatingCTA() {
   ]
 
   return (
-    <div ref={containerRef} className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+    <div
+      ref={containerRef}
+      className={`fixed right-6 z-50 flex flex-col items-end gap-3 transition-[bottom] duration-200 ${
+        isBannerOpen ? "bottom-[calc(6rem+env(safe-area-inset-bottom))] md:bottom-6" : "bottom-6"
+      }`}
+    >
       {openMenu === "call" && (
         <OptionsCard
           title="Call AHS Recovery"

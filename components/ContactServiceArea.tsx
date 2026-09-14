@@ -1,4 +1,5 @@
 import { coverageHighlights, siteConfig } from "@/lib/site-config"
+import ConsentGatedMap from "@/components/cookies/ConsentGatedMap"
 
 export default function ContactServiceArea() {
   return (
@@ -21,16 +22,7 @@ export default function ContactServiceArea() {
             </div>
           </div>
           <div className="w-full h-[320px] lg:h-[380px] rounded-2xl overflow-hidden border border-white/10">
-            <iframe
-              src={siteConfig.googleMapsEmbedUrl}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-              title="AHS Recovery location map"
-            />
+            <ConsentGatedMap src={siteConfig.googleMapsEmbedUrl} title="AHS Recovery location map" />
           </div>
         </div>
       </div>

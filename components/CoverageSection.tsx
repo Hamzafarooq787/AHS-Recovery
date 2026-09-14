@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { siteConfig } from "@/lib/site-config"
+import ConsentGatedMap from "@/components/cookies/ConsentGatedMap"
 
 export default function CoverageSection() {
   return (
@@ -42,16 +43,7 @@ export default function CoverageSection() {
             </div>
           </div>
           <div className="w-full h-[320px] lg:h-[420px] rounded-2xl overflow-hidden border border-slate-200 shadow-lg">
-            <iframe
-              src={siteConfig.googleMapsEmbedUrl}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="strict-origin-when-cross-origin"
-              title="AHS Recovery location map"
-            />
+            <ConsentGatedMap src={siteConfig.googleMapsEmbedUrl} title="AHS Recovery location map" />
           </div>
         </div>
       </div>
