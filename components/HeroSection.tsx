@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Phone, MapPin, Truck, Route } from "lucide-react"
+import { Phone, MapPin, Truck, Route, ShieldCheck } from "lucide-react"
 import { siteConfig } from "@/lib/site-config"
 import EmergencyRequestForm from "./EmergencyRequestForm"
 
@@ -44,6 +44,13 @@ export default function HeroSection() {
               AHS Recovery is based in Ilford, Essex, covering local towing and vehicle recovery within around 60
               miles, plus breakdown recovery and vehicle transportation nationwide.
             </p>
+            <div className="flex items-start gap-3 rounded-xl border border-primary/20 bg-primary/5 px-4 py-3 max-w-lg">
+              <ShieldCheck className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              <p className="text-slate-300 text-sm leading-relaxed">
+                <span className="font-bold text-white">Fully insured</span>, with Goods in Transit and Public
+                Liability cover — every vehicle in our care is protected, for complete peace of mind.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-6 md:pt-4">
               <a
                 href={`tel:${siteConfig.phoneTel}`}

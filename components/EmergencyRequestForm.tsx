@@ -43,6 +43,7 @@ export default function EmergencyRequestForm() {
     const urgencyLabel = urgencyLevels.find((u) => u.value === urgencyValue)?.label ?? urgencyValue
 
     const body = [
+      `*New Recovery Request*`,
       `Name: ${fullName}`,
       `Phone: ${phone}`,
       `Vehicle Registration: ${registration}`,
@@ -53,11 +54,9 @@ export default function EmergencyRequestForm() {
       `Urgency: ${urgencyLabel}`,
     ].join("\n")
 
-    const mailtoUrl = `mailto:${siteConfig.email}?subject=${encodeURIComponent(
-      "Recovery Request",
-    )}&body=${encodeURIComponent(body)}`
+    const whatsappUrl = `${siteConfig.whatsapp}?text=${encodeURIComponent(body)}`
 
-    window.location.href = mailtoUrl
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer")
     setSubmitted(true)
     form.reset()
   }
@@ -73,7 +72,7 @@ export default function EmergencyRequestForm() {
           <div>
             <h2 className="text-slate-900 text-xl md:text-2xl font-black leading-tight">Request Vehicle Recovery</h2>
             <p className="text-slate-500 text-sm mt-1">
-              Fill in your details and we&apos;ll open an email to {siteConfig.email} so we can arrange help. For
+              Fill in your details and we&apos;ll open WhatsApp with your request so we can arrange help. For
               emergencies, please call {siteConfig.phoneDisplay} directly.
             </p>
           </div>
@@ -217,7 +216,7 @@ export default function EmergencyRequestForm() {
 
           {submitted && (
             <p className="text-center text-sm font-bold text-primary bg-primary/10 rounded-lg py-2" role="status">
-              Opening your email app with the request details…
+              Opening WhatsApp with your request details…
             </p>
           )}
         </form>

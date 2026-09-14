@@ -85,7 +85,10 @@ export default function ContactInfo() {
           icon={<Mail className="w-5 h-5" />}
           iconClass="bg-white/10 text-white"
           title="Email Us"
-          rows={[{ label: "", value: siteConfig.email, href: `mailto:${siteConfig.email}` }]}
+          rows={[
+            { label: "", value: siteConfig.email, href: `mailto:${siteConfig.email}` },
+            { label: "", value: siteConfig.emailSecondary, href: `mailto:${siteConfig.emailSecondary}` },
+          ]}
         />
         <ContactBlock
           icon={<MapPin className="w-5 h-5" />}

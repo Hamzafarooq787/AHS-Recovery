@@ -56,6 +56,12 @@ export default function Footer() {
               </a>
             </li>
             <li className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+              <a href={`mailto:${siteConfig.emailSecondary}`} className="hover:text-primary break-all">
+                {siteConfig.emailSecondary}
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
               {siteConfig.location}, {siteConfig.country}
             </li>

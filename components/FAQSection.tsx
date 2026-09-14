@@ -48,6 +48,16 @@ const faqs: FAQ[] = [
     answer:
       "Ideally yes, so our driver can confirm details and discuss where you'd like the vehicle taken. If that's not possible, let us know when you contact us and we'll agree the best arrangement for your situation.",
   },
+  {
+    question: "How long will you take to arrive?",
+    answer:
+      "Arrival times depend on your location, the time of day and current job load, so we can't give a fixed time upfront. Call us with your postcode and we'll give you the most accurate estimate for your situation, and keep you updated if anything changes.",
+  },
+  {
+    question: "Can my family travel in the cab with you?",
+    answer:
+      "In most cases, yes — space allowing, a passenger can usually travel in the cab alongside the driver. This depends on the vehicle being used and the specific job, so please mention it when you book and we'll confirm what's possible.",
+  },
 ]
 
 export default function FAQSection() {
