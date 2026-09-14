@@ -371,7 +371,7 @@ export default function TowingPage() {
       {/* Towing situations */}
       <section className="bg-navy-accent py-20 md:py-28">
         <div className="px-6 md:px-20 lg:px-40 max-w-[1400px] mx-auto">
-          <div className="max-w-2xl mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-16">
             <span className="text-primary font-black uppercase tracking-[0.2em] text-sm">When You May Need Us</span>
             <h2 className="text-3xl md:text-5xl font-black text-white mt-4 mb-4">
               Towing Services for Different Vehicle Situations
@@ -401,7 +401,7 @@ export default function TowingPage() {
       {/* Vehicle types + checklist */}
       <section className="bg-white py-20 md:py-28">
         <div className="px-6 md:px-20 lg:px-40 max-w-[1400px] mx-auto">
-          <div className="max-w-2xl mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-16">
             <span className="text-primary font-black uppercase tracking-[0.2em] text-sm">Vehicles We Tow</span>
             <h2 className="text-3xl md:text-5xl font-black text-slate-900 mt-4 mb-4">
               Professional Towing for a Range of Vehicles
@@ -478,7 +478,7 @@ export default function TowingPage() {
       {/* Why choose us */}
       <section className="bg-white py-20 md:py-28">
         <div className="px-6 md:px-20 lg:px-40 max-w-[1400px] mx-auto">
-          <div className="max-w-2xl mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-16">
             <span className="text-primary font-black uppercase tracking-[0.2em] text-sm">AHS Recovery</span>
             <h2 className="text-3xl md:text-5xl font-black text-slate-900 mt-4 mb-4">
               Why Choose Our Professional Towing Service?
@@ -508,7 +508,7 @@ export default function TowingPage() {
       {/* Towing vs vehicle transportation */}
       <section className="bg-navy-accent py-20 md:py-28">
         <div className="px-6 md:px-20 lg:px-40 max-w-[1400px] mx-auto">
-          <div className="max-w-3xl mb-12">
+          <div className="max-w-3xl mx-auto text-center mb-12">
             <span className="text-primary font-black uppercase tracking-[0.2em] text-sm">Choosing the Right Service</span>
             <h2 className="text-3xl md:text-4xl font-black text-white mt-4 mb-6 leading-tight">
               Do You Need Towing or Vehicle Transportation?
