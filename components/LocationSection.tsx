@@ -24,23 +24,23 @@ export default function LocationSection() {
       </div>
       <div className="w-full lg:w-1/2 h-[500px] bg-navy-accent relative">
         <iframe
-          src="https://www.google.com/maps?q=Ilford,Essex&output=embed"
+          src={siteConfig.googleMapsEmbedUrl}
           width="100%"
           height="100%"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="AHS Recovery coverage map"
-          className="grayscale opacity-60"
+          referrerPolicy="strict-origin-when-cross-origin"
+          title="AHS Recovery location map"
         />
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="bg-primary/20 p-8 rounded-full border border-primary/30 animate-pulse">
-            <div className="bg-primary p-4 rounded-full">
-              <span className="material-symbols-outlined text-background-dark text-3xl">my_location</span>
-            </div>
-          </div>
-        </div>
+        <a
+          href={siteConfig.googleMapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute bottom-4 right-4 bg-primary text-background-dark px-4 py-2 rounded-lg font-bold text-sm shadow-lg hover:brightness-110 transition-all"
+        >
+          Get Directions
+        </a>
       </div>
     </section>
   )
