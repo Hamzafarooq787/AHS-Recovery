@@ -1,5 +1,4 @@
 import HeroSection from "@/components/HeroSection"
-import IntroductionSection from "@/components/IntroductionSection"
 import EmergencyCTAStrip from "@/components/EmergencyCTAStrip"
 import FeaturedServicesSection from "@/components/FeaturedServicesSection"
 import WhyChooseUsSection from "@/components/WhyChooseUsSection"
@@ -63,7 +62,6 @@ export default function HomePage() {
       <link rel="canonical" href={`${siteConfig.siteUrl}/`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceListSchema) }} />
       <HeroSection />
-      <IntroductionSection />
       <EmergencyCTAStrip />
       <FeaturedServicesSection />
       <WhyChooseUsSection />

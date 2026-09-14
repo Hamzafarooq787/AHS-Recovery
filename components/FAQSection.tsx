@@ -75,9 +75,7 @@ export default function FAQSection() {
       <div className="px-6 md:px-20 lg:px-40 max-w-[1400px] mx-auto">
         <div className="text-center mb-16">
           <span className="text-primary font-black uppercase tracking-[0.2em] text-sm">Common Questions</span>
-          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mt-4 mb-4">
-            Frequently Asked Questions About Vehicle Recovery in Ilford
-          </h2>
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mt-4 mb-4">Frequently Asked Questions</h2>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-3">
