@@ -1,4 +1,5 @@
 import { coverageHighlights, siteConfig } from "@/lib/site-config"
+import ConsentGatedMap from "@/components/cookies/ConsentGatedMap"
 
 export default function LocationSection() {
   return (
@@ -23,24 +24,7 @@ export default function LocationSection() {
         </ul>
       </div>
       <div className="w-full lg:w-1/2 h-[500px] bg-navy-accent relative">
-        <iframe
-          src="https://www.google.com/maps?q=Ilford,Essex&output=embed"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="AHS Recovery coverage map"
-          className="grayscale opacity-60"
-        />
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="bg-primary/20 p-8 rounded-full border border-primary/30 animate-pulse">
-            <div className="bg-primary p-4 rounded-full">
-              <span className="material-symbols-outlined text-background-dark text-3xl">my_location</span>
-            </div>
-          </div>
-        </div>
+        <ConsentGatedMap src={siteConfig.googleMapsEmbedUrl} title="AHS Recovery location map" />
       </div>
     </section>
   )

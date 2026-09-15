@@ -97,8 +97,8 @@ export default function ContactInfo() {
           rows={[
             {
               label: "",
-              value: siteConfig.location,
-              href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.location)}`,
+              value: siteConfig.fullAddress,
+              href: siteConfig.googleMapsUrl,
               external: true,
             },
           ]}

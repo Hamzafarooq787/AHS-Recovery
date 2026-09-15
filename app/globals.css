@@ -128,17 +128,96 @@
     @apply bg-background text-foreground;
     /* Remove mobile bottom padding as floating CTAs don't block content */
     padding-bottom: env(safe-area-inset-bottom);
+    text-rendering: optimizeLegibility;
   }
   .material-symbols-outlined {
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   }
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+.legal-content {
+  color: theme("colors.slate.300");
+  line-height: 1.75;
+}
+.legal-content h2 {
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  scroll-margin-top: 6rem;
+}
+.legal-content h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  scroll-margin-top: 6rem;
+}
+.legal-content p {
+  margin-bottom: 1rem;
+}
+.legal-content ul,
+.legal-content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+.legal-content ul {
+  list-style: disc;
+}
+.legal-content ol {
+  list-style: decimal;
+}
+.legal-content li {
+  margin-bottom: 0.5rem;
+}
+.legal-content a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-underline-offset: 2px;
+}
+.legal-content a:hover {
+  text-decoration: underline;
+}
+.legal-content strong {
+  color: theme("colors.slate.100");
+}
+.legal-content .legal-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.legal-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  min-width: 480px;
+}
+.legal-content th {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.legal-content td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  vertical-align: top;
+}
+.legal-content tr:last-child td {
+  border-bottom: none;
+}
+.legal-content mark {
+  background: rgba(219, 165, 3, 0.2);
+  color: theme("colors.amber.200");
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
 }

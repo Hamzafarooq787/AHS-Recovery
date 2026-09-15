@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Mail, Phone, MapPin } from "lucide-react"
 import Logo from "./Logo"
 import PaymentMethods from "./PaymentMethods"
+import CookieSettingsButton from "./cookies/CookieSettingsButton"
 import { services, siteConfig } from "@/lib/site-config"
 
 export default function Footer() {
@@ -63,16 +64,37 @@ export default function Footer() {
                 {siteConfig.emailSecondary}
               </a>
             </li>
-            <li className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-              {siteConfig.location}, {siteConfig.country}
+            <li className="flex items-start gap-2">
+              <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+              <a
+                href={siteConfig.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary"
+              >
+                {siteConfig.fullAddress}
+              </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-slate-600 text-xs gap-2">
-        <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
-        <p>Local recovery across {siteConfig.localCoverageArea}. Breakdown &amp; transport nationwide.</p>
+      <div className="mt-16 pt-8 border-t border-white/5 flex flex-col gap-6 text-slate-600 text-xs">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+          <Link className="hover:text-primary" href="/privacy-policy">
+            Privacy Policy
+          </Link>
+          <Link className="hover:text-primary" href="/terms-and-conditions">
+            Terms and Conditions
+          </Link>
+          <Link className="hover:text-primary" href="/cookie-policy">
+            Cookie Policy
+          </Link>
+          <CookieSettingsButton className="hover:text-primary underline underline-offset-2" />
+        </div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-2">
+          <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+          <p>Local recovery across {siteConfig.localCoverageArea}. Breakdown &amp; transport nationwide.</p>
+        </div>
       </div>
     </footer>
   )

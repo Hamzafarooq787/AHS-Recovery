@@ -1,9 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import ConditionalLayout from "@/components/ConditionalLayout"
 import ScrollToTop from "@/components/ScrollToTop"
+import { CookieConsentProvider } from "@/lib/cookie-consent"
+import CookieBanner from "@/components/cookies/CookieBanner"
+import CookiePreferencesModal from "@/components/cookies/CookiePreferencesModal"
+import ConsentedAnalytics from "@/components/cookies/ConsentedAnalytics"
 import { siteConfig } from "@/lib/site-config"
 import "./globals.css"
 
@@ -65,9 +68,11 @@ export default function RootLayout({
     ],
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Ilford",
-      addressRegion: "Essex",
-      addressCountry: "GB",
+      streetAddress: siteConfig.addressStreet,
+      addressLocality: siteConfig.addressLocality,
+      addressRegion: siteConfig.addressRegion,
+      postalCode: siteConfig.addressPostcode,
+      addressCountry: siteConfig.addressCountryCode,
     },
     image: `${siteConfig.siteUrl}/opengraph-image.png`,
     sameAs: [],
@@ -88,9 +93,13 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased bg-background-dark text-slate-100">
-        <ScrollToTop />
-        <ConditionalLayout>{children}</ConditionalLayout>
-        <Analytics />
+        <CookieConsentProvider>
+          <ScrollToTop />
+          <ConditionalLayout>{children}</ConditionalLayout>
+          <CookieBanner />
+          <CookiePreferencesModal />
+          <ConsentedAnalytics />
+        </CookieConsentProvider>
       </body>
     </html>
   )
